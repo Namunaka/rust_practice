@@ -37,3 +37,4 @@
 # --- Environment / user-specific ---
 .env
 .env.*
+/guessing_game/target
