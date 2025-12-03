@@ -14,7 +14,9 @@ fn main() {
         .expect("Failed to read line");
     println!("你猜的数是: {}", guess);
 
-    match guess.cmp(&secret_number.to_string()) {
+    let guess: u32 = guess.trim().parse().expect("请输入一个数字");
+
+    match guess.cmp(&secret_number) {
         Ordering::Less => println!("太小了"),
         Ordering::Greater => println!("太大了"),
         Ordering::Equal => println!("恭喜你猜对了"),
