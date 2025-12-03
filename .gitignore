@@ -1,0 +1,38 @@
+# ============================================
+# Rust / Cargo Standard .gitignore
+# ============================================
+
+# --- Cargo build output ---
+/target/
+
+# --- Rust Analyzer & IDE files ---
+*.rs.bk
+/.vscode/
+/.idea/
+
+# --- Executables / binaries ---
+*.exe
+*.dll
+*.so
+*.dylib
+*.out
+
+# --- Logs & temp files ---
+*.log
+*.tmp
+*.swp
+*.swo
+
+# --- Backup files ---
+*~
+*.bak
+
+# --- macOS files ---
+.DS_Store
+
+# --- Cargo local config (不要上传个人路径配置) ---
+.cargo/
+
+# --- Environment / user-specific ---
+.env
+.env.*
